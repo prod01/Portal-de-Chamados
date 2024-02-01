@@ -1,0 +1,1802 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>PortalDeChamados</processId>
+    </processDefinitionPK>
+    <processDescription>Portal de Chamados</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Tecnologia da Informação - TI </categoryId>
+    <managerEngineAllocationId>Papel</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;ResponsavelSLA&lt;/Role&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>true</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Portal de Chamados</processId>
+      <version>87</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>0</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>true</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction>Usuário através do formulário solicitação suporte, realiza a abertura do tickert referente ao problema em ocorrencia.&#xd;
+</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>120</positionX>
+      <positionY>90</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </processStatePK>
+      <stateName>Solucionar Demanda </stateName>
+      <stateDescription>Solucionar Demanda </stateDescription>
+      <instruction>o usuário responsável pelo suporte recebe o ticket aberto pelo usuário e realizar as devidas ações, descrevendo a solução do problema. </instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName>SLA</deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;CHAPATECNICO&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>230</positionX>
+      <positionY>190</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Central de Cadastro - Cli/For</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Validar Solução</stateName>
+      <stateDescription>Validar Solução</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;First&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>400</positionX>
+      <positionY>54</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Central de Cadastro - Cli/For</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>20</sequence>
+      </processStatePK>
+      <stateName>Analise da gestão </stateName>
+      <stateDescription>Analise da gestão </stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;GestorTI&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>540</positionX>
+      <positionY>326</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>26</sequence>
+      </processStatePK>
+      <stateName>Pausado</stateName>
+      <stateDescription>Pausado</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;ResponsavelSLA&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>90</positionX>
+      <positionY>334</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Central de Cadastro - Cli/For</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>31</sequence>
+      </processStatePK>
+      <stateName>Gerencia Projetos Fluig </stateName>
+      <stateDescription>Gerencia Projetos Fluig </stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;Gestao_Dev_Fluig&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>230</positionX>
+      <positionY>459</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>32</sequence>
+      </processStatePK>
+      <stateName>Aprovação Diretoria </stateName>
+      <stateDescription>Aprovação Diretoria </stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;Diretoria&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>230</positionX>
+      <positionY>610</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>14</sequence>
+      </processStatePK>
+      <stateName>Exclusive</stateName>
+      <stateDescription>Exclusive</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>560</positionX>
+      <positionY>31</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>15</sequence>
+      </processStatePK>
+      <stateName>End</stateName>
+      <stateDescription>End</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>730</positionX>
+      <positionY>64</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>22</sequence>
+      </processStatePK>
+      <stateName>End</stateName>
+      <stateDescription>End</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>730</positionX>
+      <positionY>344</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>36</sequence>
+      </processStatePK>
+      <stateName>End</stateName>
+      <stateDescription>End</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>400</positionX>
+      <positionY>632</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>38</sequence>
+      </processStatePK>
+      <stateName>End</stateName>
+      <stateDescription>End</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>400</positionX>
+      <positionY>480</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>87</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Péssimo&quot; ||&#xd;
+hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Ruim&quot; </condition>
+      <destinationSequenceId>20</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>87</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Resolvido&quot;</condition>
+      <destinationSequenceId>5</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>87</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Ótimo&quot;||hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Bom&quot;||hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Regular&quot;||&#xd;
+hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Péssimo&quot;||hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Ruim&quot; </condition>
+      <destinationSequenceId>15</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+  </list>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>6</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>10</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>16</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>15</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>18</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>21</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>20</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>22</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>24</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>25</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>9</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+      <movementTitle></movementTitle>
+      <movementDescription></movementDescription>
+      <movementAccessLinkDescription></movementAccessLinkDescription>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>27</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>26</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>28</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>26</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>33</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>31</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>34</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>31</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>35</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>31</initialStateSequence>
+      <finalStateSequence>32</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>37</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>32</initialStateSequence>
+      <finalStateSequence>36</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>39</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>31</initialStateSequence>
+      <finalStateSequence>38</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>40</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>32</initialStateSequence>
+      <finalStateSequence>31</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessCreate</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+    &#xd;
+	//Pega o valor do idchamado interno e seta o valor no html.&#xd;
+    hAPI.setCardValue(&quot;IDCHAMADO&quot;, processId); &#xd;
+    log.info(&quot;Idchamdo: &quot; + processId)&#xd;
+    &#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterStateEntry</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterStateEntry(sequenceId){&#xd;
+	&#xd;
+&#xd;
+	//pega o valor do WKDocument e transforma ele em duas variaveis &#xd;
+	var doc = getValue(&quot;WKDocument&quot;);&#xd;
+	try{&#xd;
+		var docExpires = doc.getExpires();&#xd;
+		var docExpirationDate = doc.getExpirationDate();&#xd;
+		&#xd;
+		log.info(&quot;doc: &quot;+doc)&#xd;
+		log.info(&quot;docExpires: &quot;+docExpires)&#xd;
+		log.info(&quot;docExpirationDate: &quot;+docExpirationDate)&#xd;
+	}&#xd;
+	catch(e){&#xd;
+		log.info(&quot;Erro: &quot;+e)&#xd;
+	}&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeCancelProcess</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeCancelProcess(colleagueId,processId){&#xd;
+&#xd;
+	 var Now_State =parseInt(getValue(&quot;WKNumState&quot;));&#xd;
+	if(Now_State ==9){&#xd;
+		&#xd;
+		throw &quot;Você não pode cancelar uma solicitação atendida, favor fechar-la.&quot;; &#xd;
+	}&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(){&#xd;
+	&#xd;
+	var atividade = getValue(&quot;WKCurrentState&quot;);&#xd;
+	vencimentoSLA(atividade)&#xd;
+	dataReabertura()&#xd;
+	//consultaDataHora(atividade)&#xd;
+	&#xd;
+	log.info(&quot;beforeTaskSave&quot;)&#xd;
+	var status = hAPI.getCardValue(&quot;STATUS&quot;) &#xd;
+	&#xd;
+	if(status == &quot;FECHADO&quot; ){ &#xd;
+		log.info(&quot;entrou if&quot;)&#xd;
+		var dataH = new Date();&#xd;
+		console.log( &quot;dataH&quot;+dataH )&#xd;
+		&#xd;
+		var d = dataH.getDate();&#xd;
+		var m = dataH.getMonth() + 1;&#xd;
+		var a = dataH.getFullYear();&#xd;
+		&#xd;
+		if (m &lt; 10) {&#xd;
+			m = &quot;0&quot; + m;&#xd;
+		}&#xd;
+		&#xd;
+		if (d &lt; 10) {&#xd;
+			d = &quot;0&quot; + d;&#xd;
+		}&#xd;
+		&#xd;
+		var dia = d + &quot;/&quot; + m + &quot;/&quot; + a;&#xd;
+&#xd;
+		var h = dataH.getHours();&#xd;
+		var m = dataH.getMinutes();&#xd;
+		&#xd;
+		if (h &lt; 10) {&#xd;
+			h = &quot;0&quot; + h;&#xd;
+		}&#xd;
+	&#xd;
+		if (m &lt; 10) {&#xd;
+			m = &quot;0&quot; + m;&#xd;
+		}&#xd;
+		&#xd;
+		var hor = h + &quot;:&quot; + m;&#xd;
+		&#xd;
+		var dataFull = dia + &quot; &quot; + hor;&#xd;
+		&#xd;
+		&#xd;
+		hAPI.setCardValue(&quot;DATAFECHAMENTO&quot;, dataFull)&#xd;
+		&#xd;
+	&#xd;
+	}&#xd;
+		&#xd;
+}&#xd;
+&#xd;
+function vencimentoSLA(atividade){&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+	if(atividade == 5){&#xd;
+	//window[&quot;TRANSFERECHAMADO&quot;].clear()&#xd;
+	var text = hAPI.getCardValue(&quot;SLAEXTENSO&quot;)&#xd;
+	log.info(&quot;ENTROU VENCIENTO Sla&quot;)&#xd;
+	var myArray = text.split(&quot; &quot;);&#xd;
+	log.info(&quot;variavel myArray: &quot; + myArray)&#xd;
+	var data = myArray[0].split(&quot;/&quot;);&#xd;
+	log.info(&quot;variavel  data: &quot; + data)&#xd;
+	var hora = myArray[1].split(&quot;:&quot;);&#xd;
+	log.info(&quot;variavel : &quot; + hora)&#xd;
+	&#xd;
+	var dia = data[0];&#xd;
+	log.info(&quot;variavel dia: &quot; + dia)&#xd;
+	var meses = data[1];&#xd;
+	log.info(&quot;variavel meses: &quot; + meses)&#xd;
+	var ano = data[2];&#xd;
+	log.info(&quot;variavel ano: &quot; + ano)&#xd;
+	var h = hora[0];&#xd;
+	log.info(&quot;variavel h: &quot; + h)&#xd;
+	var m = hora[1];&#xd;
+	log.info(&quot;variavel m: &quot; + m)&#xd;
+	&#xd;
+	var mesjs = meses -1&#xd;
+	log.info(&quot;variavel mesjs: &quot; + mesjs)&#xd;
+	&#xd;
+	var dataVencimentoSLA= new Date(ano, mesjs, dia, h, m, &quot;00&quot;)&#xd;
+&#xd;
+	log.info(&quot;=================================&quot;)&#xd;
+	log.info(&quot;variavel dataVencimentoSLA: &quot; + dataVencimentoSLA)&#xd;
+	&#xd;
+	var date = new Date();&#xd;
+	log.info(&quot;=================================&quot;)&#xd;
+	log.info(&quot;variavel date: &quot; + date)&#xd;
+	var d = date.getDate();&#xd;
+	var mes = date.getMonth() + 1;&#xd;
+	var a = date.getFullYear();&#xd;
+		&#xd;
+		if (mes &lt; 10) {&#xd;
+			mes = &quot;0&quot; + mes;&#xd;
+		}&#xd;
+		&#xd;
+		if (d &lt; 10) {&#xd;
+			d = &quot;0&quot; + d;&#xd;
+		}&#xd;
+		&#xd;
+		var h = date.getHours();&#xd;
+		var m = date.getMinutes();&#xd;
+		&#xd;
+		if (h &lt; 10) {&#xd;
+		h = &quot;0&quot; + h;&#xd;
+		}&#xd;
+	&#xd;
+		if (m &lt; 10) {&#xd;
+			m = &quot;0&quot; + m;&#xd;
+		}&#xd;
+		&#xd;
+		mesjs = mes -1&#xd;
+		&#xd;
+		var dataAtual = new Date(a, mesjs, d, h, m, &quot;00&quot;)&#xd;
+&#xd;
+		log.info(&quot;=================================&quot;)&#xd;
+		log.info(&quot;variavel datanow: &quot;+dataAtual)&#xd;
+      &#xd;
+&#xd;
+  	log.info(&quot;entrouESS: &quot;+ dataVencimentoSLA +&quot; ??? &quot; + dataAtual)&#xd;
+  	var status = hAPI.getCardValue(&quot;STATUS&quot;);&#xd;
+&#xd;
+&#xd;
+  	if (dataVencimentoSLA &gt; dataAtual &amp;&amp; status == &quot;FECHADO&quot;){&#xd;
+  		hAPI.setCardValue(&quot;VENCIMENTOSLA&quot;, &quot;SLA Atendido&quot; )&#xd;
+  		log.info(&quot;SLA Atendido: &quot;+dataVencimentoSLA+&quot; teste &quot; +dataAtual )&#xd;
+  	}&#xd;
+  	if (dataVencimentoSLA &lt; dataAtual){&#xd;
+  		hAPI.setCardValue(&quot;VENCIMENTOSLA&quot;, &quot;SLA Violado&quot; )&#xd;
+  		log.info(&quot;dSLA Violadooc: &quot;+dataVencimentoSLA+&quot; teste &quot; +dataAtual )&#xd;
+  		//19/10/2022 15:32 19/10/2022 17:31&#xd;
+  	}&#xd;
+  	&#xd;
+	}&#xd;
+	&#xd;
+}&#xd;
+&#xd;
+function dataReabertura(){&#xd;
+	log.info(&quot;dataReabertura&quot;)&#xd;
+	&#xd;
+	var reabertura = hAPI.getCardValue(&quot;AVALIACAO&quot;);&#xd;
+	log.info( &quot;reabertura&quot;+reabertura);&#xd;
+	var atividade = hAPI.getCardValue(&quot;NUM_ATIVIDADE&quot;);&#xd;
+	log.info(&quot;atividade :: &quot;+ atividade);&#xd;
+	if (reabertura == &quot;Resolvido&quot; &amp;&amp; atividade == &apos;9&apos; ){  &#xd;
+	&#xd;
+		log.info(&quot;entrou nesse if&quot;)&#xd;
+	 var date = new Date();&#xd;
+		log.info(date)&#xd;
+     var d = date.getDate();&#xd;
+		var m = date.getMonth() + 1;&#xd;
+		var a = date.getFullYear();&#xd;
+		&#xd;
+		if (m &lt; 10) {&#xd;
+			m = &quot;0&quot; + m;&#xd;
+		}&#xd;
+		&#xd;
+		if (d &lt; 10) {&#xd;
+			d = &quot;0&quot; + d;&#xd;
+		}&#xd;
+		&#xd;
+		var dia = d + &quot;/&quot; + m + &quot;/&quot; + a;&#xd;
+&#xd;
+		var h = date.getHours();&#xd;
+		var m = date.getMinutes();&#xd;
+		&#xd;
+		if ( h &lt; 10) {&#xd;
+			h = &quot;0&quot; + h;&#xd;
+		}&#xd;
+	&#xd;
+		if ( m &lt; 10) {&#xd;
+			m = &quot;0&quot; + m;&#xd;
+		}&#xd;
+&#xd;
+		var hor = h + &quot;:&quot; + m;&#xd;
+		&#xd;
+		var dataFull = dia + &quot; &quot; + hor;&#xd;
+		hAPI.setCardValue(&quot;DATAREABERTURA&quot;,dataFull);&#xd;
+		hAPI.setCardValue(&quot;VENCIMENTOSLA&quot;, &quot;&quot;);&#xd;
+		hAPI.setCardValue(&quot;STATUS&quot;, &quot;ABERTO&quot;);&#xd;
+     &#xd;
+			log.info(dataFull);&#xd;
+     &#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskSave</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+//função que esta trocando o sla do chamado com validação diacordo com o valor escolhido no diagrama &#xd;
+	var atividade = getValue(&quot;WKCurrentState&quot;);&#xd;
+	var valorSLA = hAPI.getCardValue(&quot;SLA&quot;);&#xd;
+	var setValorSLA = hAPI.getCardValue(&quot;SLAGESTOR&quot;);&#xd;
+	var nowDate = new Date(); &#xd;
+	var prazoFormulario = nowDate.getDate()+&apos;/&apos;+(nowDate.getMonth()+1)+&apos;/&apos;+nowDate.getFullYear();&#xd;
+	var dataAtual = Date.now();&#xd;
+	&#xd;
+	&#xd;
+	&#xd;
+//	var oito = dataAtual +;&#xd;
+//	var dezesseis = dataAtual +;&#xd;
+//	var vintequatro = dataAtual +;&#xd;
+	&#xd;
+	log.info(&quot;Entrou Function: &quot; + atividade)&#xd;
+	log.info(&quot;prazo Formulario: &quot; + prazoFormulario)&#xd;
+	log.info(&quot;prazo Formulario: &quot; + nowDate)&#xd;
+	&#xd;
+&#xd;
+	 &#xd;
+    // Atividade de sequência 5 é a da tarefa criada e que vou alterar o prazo de conclusão&#xd;
+    if (atividade == 5 &amp;&amp; setValorSLA != &apos;NULO&apos;){&#xd;
+     				&#xd;
+    		log.info(&quot;valor sla&quot; + setValorSLA)&#xd;
+   				&#xd;
+&#xd;
+    								log.info(&quot;Novo prazo&quot; + setValorSLA)&#xd;
+    	&#xd;
+						        // Recuperando a data informada no campo do formulário&#xd;
+						        if (prazoFormulario != undefined &amp;&amp; prazoFormulario != &apos;&apos;) {&#xd;
+&#xd;
+    								log.info(&quot;Entrou IF 1 After Task Save Não vazio: &quot; + setValorSLA)&#xd;
+						            var numeroDaSolicitacao = getValue(&apos;WKNumProces&apos;);&#xd;
+						            var threadDaSolicitacao = 0; // Normalmente 0, quando não for atividade paralela&#xd;
+						            var responsavelPelaTarefa = colleagueId;&#xd;
+						             &#xd;
+						            /* Nesse caso o formato da data salva pelo formulário no exemplo é DD/MM/AAAA, mas isso pode variar de acordo com a formatação utilizada, &#xd;
+						               mudando assim as posições das informações dentro do array */&#xd;
+						             /*01/07/2022*/&#xd;
+						            /* Extrai os dados da data do formulário para um array, para posteriormente transformar em data do Javascript */&#xd;
+						            var arrayPrazoConclusao = prazoFormulario.split(&quot;/&quot;);&#xd;
+						            var dia = arrayPrazoConclusao[0]; // Posição 0 do array é o dia&#xd;
+						            var mes = arrayPrazoConclusao[1] - 1; // Posição 1 do array é o mês (Subtraímos 1 porque na data do Javascript o mês vai de 0 a 11)&#xd;
+						            var ano = arrayPrazoConclusao[2]; // Posição 2 do array é o ano&#xd;
+						          &#xd;
+						            var horaDoPrazo = (15*60*60) - 1; /* A hora é em milisegundos, e esse cálculo tem resultado de 23:59:59, ou seja, &#xd;
+						            o prazo de conclusão vai ser até o último segundo do dia informado no formulário */&#xd;
+						           try{&#xd;
+						            // Cria a data no Javascript&#xd;
+						        	var dataformulario =   hAPI.getCardValue(&quot;SLAEXTENSO&quot;);&#xd;
+	&#xd;
+						        	console.log(&quot;ENTROU VENCIENTO Sla&quot;)&#xd;
+						        	var myArray = dataformulario.split(&quot; &quot;);&#xd;
+						        	var data = myArray[0].split(&quot;/&quot;);&#xd;
+						        	var hora = myArray[1].split(&quot;:&quot;);&#xd;
+						        	&#xd;
+						        	var dia = data[0];&#xd;
+						        	console.log(&quot;variavel dia: &quot; + dia)&#xd;
+						        	var meses = data[1];&#xd;
+						        	console.log(&quot;variavel meses: &quot; + meses)&#xd;
+						        	var ano = data[2];&#xd;
+						        	console.log(&quot;variavel ano: &quot; + ano)&#xd;
+						        	var h = hora[0];&#xd;
+						        	console.log(&quot;variavel h: &quot; + h)&#xd;
+						        	var m = hora[1];&#xd;
+						        	console.log(&quot;variavel m: &quot; + m)&#xd;
+						        	&#xd;
+						        	var mesjs = meses -1&#xd;
+						        	console.log(&quot;variavel mesjs: &quot; + mesjs)&#xd;
+						        	&#xd;
+						        	var dataDoPrazo= new Date(ano, mesjs, dia, h, m, &quot;00&quot;)&#xd;
+						        							        	&#xd;
+						        	var Segundos = ((h-0)*60*60) + ((m-0)*60)&#xd;
+						        	console.log(&quot;teste&quot;+Segundos)&#xd;
+						        	&#xd;
+						            //Calcula o prazo&#xd;
+						            var obj = hAPI.calculateDeadLineHours(dataDoPrazo, parseInt(Segundos), parseInt(setValorSLA), &quot;Central de Cadastro - Cli/For&quot;);&#xd;
+						            var dt = obj[0];&#xd;
+						            var segundos = obj[1];&#xd;
+						            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+						            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+						            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+						            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+						            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+						             &#xd;
+						            &#xd;
+						            &#xd;
+						            // Altera o prazo de conclusão&#xd;
+						            hAPI.setDueDate(numeroDaSolicitacao, threadDaSolicitacao, responsavelPelaTarefa, dt, segundos);&#xd;
+						           &#xd;
+						            log.info(&quot;--------after--------- &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+						            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+						            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+						            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+						            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+						            log.info(&quot;Try Executado with successo&quot;) &#xd;
+						            console.log(&quot;dataDoPrazo&quot;+dataDoPrazo)&#xd;
+						           }catch (mistake){&#xd;
+						        	   consultaDataHora(atividade)&#xd;
+						        	   log.info(&quot;erro do catch&quot; + mistake)&#xd;
+					        	   }&#xd;
+						        }&#xd;
+    		 log.info(&quot;antes de chamar a funcão&quot;)&#xd;
+    		 log.info(&quot;depois de chamar&quot;)&#xd;
+    		 &#xd;
+    		&#xd;
+    		&#xd;
+    }&#xd;
+    else {log.info(&quot;resultado&quot; +setValorSLA)}&#xd;
+}&#xd;
+&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>690</height>
+      <width>860</width>
+      <positionX>0</positionX>
+      <positionY>10</positionY>
+      <stateName>Processo HELP DESK</stateName>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FF8040</color>
+      <height>138</height>
+      <width>830</width>
+      <positionX>30</positionX>
+      <positionY>10</positionY>
+      <stateName>SOLICITANTE</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FB8D82</color>
+      <height>138</height>
+      <width>830</width>
+      <positionX>30</positionX>
+      <positionY>148</positionY>
+      <stateName>SUPORTE</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>82b0b7</color>
+      <height>138</height>
+      <width>830</width>
+      <positionX>30</positionX>
+      <positionY>286</positionY>
+      <stateName>Gestor T.I.</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>adc9ac</color>
+      <height>138</height>
+      <width>830</width>
+      <positionX>30</positionX>
+      <positionY>424</positionY>
+      <stateName>Desenvolvimento fluig </stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>d0daae</color>
+      <height>138</height>
+      <width>830</width>
+      <positionX>30</positionX>
+      <positionY>562</positionY>
+      <stateName>Aprovação Diretoria</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>6</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>160</positionX>
+      <positionY>40</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <componGrafSequence>7</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Inicio do Processo</stateName>
+    </ProcessComponGraf>
+  </list>
+  <list>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>8</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+    </ProcessLinkAssoc>
+  </list>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>6</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>137</positionX>
+      <positionY>225</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>8</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>137</positionX>
+      <positionY>74</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>10</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>452</positionX>
+      <positionY>225</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>18</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>538</positionX>
+      <positionY>29</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>18</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>283</positionX>
+      <positionY>29</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>24</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>283</positionX>
+      <positionY>362</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>27</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>229</positionX>
+      <positionY>250</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>27</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>142</positionX>
+      <positionY>250</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>28</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>142</positionX>
+      <positionY>250</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>28</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>187</positionX>
+      <positionY>250</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>87</version>
+        <linkSequence>28</linkSequence>
+        <bendSequence>3</bendSequence>
+      </processLinkBendPK>
+      <positionX>229</positionX>
+      <positionY>250</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>NOMESOLICITANTE</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>Solicitante</fieldDescription>
+      <slotId>1</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>CCUSTOSOLICITANTE</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>Centro de Custo </fieldDescription>
+      <slotId>2</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>DESCRICAOSOLICITACAO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>DESCRICAOSOLICITACAO</fieldDescription>
+      <slotId>3</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>SLA</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>SLA</fieldDescription>
+      <slotId>4</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>NOMETECNICO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>Técnico</fieldDescription>
+      <slotId>5</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>CATEGORIA</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>Categoria</fieldDescription>
+      <slotId>6</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>SUBCATEGORIA</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>Sub-Categoria</fieldDescription>
+      <slotId>7</slotId>
+    </ProcessFormField>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>title</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>description</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>highlight</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>9</stateSequence>
+      <appKey>approval</appKey>
+      <appField>title</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>9</stateSequence>
+      <appKey>approval</appKey>
+      <appField>description</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>9</stateSequence>
+      <appKey>approval</appKey>
+      <appField>highlight</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>9</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>9</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>26</stateSequence>
+      <appKey>approval</appKey>
+      <appField>title</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>26</stateSequence>
+      <appKey>approval</appKey>
+      <appField>description</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>26</stateSequence>
+      <appKey>approval</appKey>
+      <appField>highlight</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>26</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>87</processVersion>
+      <stateSequence>26</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+  </list>
+  <list/>
+  <list/>
+</list>

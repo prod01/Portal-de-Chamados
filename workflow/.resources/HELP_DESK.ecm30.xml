@@ -1,0 +1,1238 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>PortalDeChamados</processId>
+    </processDefinitionPK>
+    <processDescription>Portal de Chamados</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Tecnologia da Informação - TI </categoryId>
+    <managerEngineAllocationId>Papel</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;GestorTI&lt;/Role&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>true</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Portal de Chamados</processId>
+      <version>1</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>0</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>true</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction>Usuário através do formulário solicitação suporte, realiza a abertura do tickert referente ao problema em ocorrencia.&#xd;
+</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>120</positionX>
+      <positionY>90</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </processStatePK>
+      <stateName>Solucionar Demanda </stateName>
+      <stateDescription>Solucionar Demanda </stateDescription>
+      <instruction>o usuário responsável pelo suporte recebe o ticket aberto pelo usuário e realizar as devidas ações, descrevendo a solução do problema. </instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName>SLA</deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;CHAPATECNICO&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>230</positionX>
+      <positionY>190</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId>Central de Cadastro - Cli/For</periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Validar Solução</stateName>
+      <stateDescription>Validar Solução</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;First&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>400</positionX>
+      <positionY>54</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>20</sequence>
+      </processStatePK>
+      <stateName>Analise da gestão </stateName>
+      <stateDescription>Analise da gestão </stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;GestorTI&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>537</positionX>
+      <positionY>327</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>14</sequence>
+      </processStatePK>
+      <stateName>Exclusive</stateName>
+      <stateDescription>Exclusive</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>560</positionX>
+      <positionY>31</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>15</sequence>
+      </processStatePK>
+      <stateName>End</stateName>
+      <stateDescription>End</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>730</positionX>
+      <positionY>64</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>22</sequence>
+      </processStatePK>
+      <stateName>End</stateName>
+      <stateDescription>End</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>730</positionX>
+      <positionY>344</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>6</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>1</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Péssimo&quot;</condition>
+      <destinationSequenceId>20</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>1</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Resolvido&quot;</condition>
+      <destinationSequenceId>5</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>1</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Ótimo&quot; || hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Bom&quot; ||&#xd;
+hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Péssimo&quot; ||&#xd;
+hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Regular&quot; ||&#xd;
+hAPI.getCardValue(&quot;AVALIACAO&quot;) == &quot;Ruim&quot; </condition>
+      <destinationSequenceId>15</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+  </list>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>6</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>10</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>16</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>15</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>18</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>21</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>20</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>22</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>24</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>20</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>25</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>9</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessCreate</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+    &#xd;
+	//Pega o valor do idchamado interno e seta o valor no html.&#xd;
+    hAPI.setCardValue(&quot;IDCHAMADO&quot;, processId); &#xd;
+    log.info(&quot;Idchamdo: &quot; + processId)&#xd;
+    &#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterStateEntry</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterStateEntry(sequenceId){&#xd;
+	//pega o valor do WKDocument e transforma ele em duas variaveis &#xd;
+	var doc = getValue(&quot;WKDocument&quot;);&#xd;
+	try{&#xd;
+		var docExpires = doc.getExpires();&#xd;
+		var docExpirationDate = doc.getExpirationDate();&#xd;
+		&#xd;
+		log.info(&quot;doc: &quot;+doc)&#xd;
+		log.info(&quot;docExpires: &quot;+docExpires)&#xd;
+		log.info(&quot;docExpirationDate: &quot;+docExpirationDate)&#xd;
+	}&#xd;
+	catch(e){&#xd;
+		log.info(&quot;Erro: &quot;+e)&#xd;
+	}&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskSave</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+//função que esta trocando o sla do chamado com validação diacordo com o valor escolhido no diagrama &#xd;
+	var atividade = getValue(&quot;WKCurrentState&quot;);&#xd;
+	var valorSLA = hAPI.getCardValue(&quot;SLA&quot;);&#xd;
+	var setValorSLA = hAPI.getCardValue(&quot;SLAGESTOR&quot;);&#xd;
+	var nowDate = new Date(); &#xd;
+	var prazoFormulario = nowDate.getDate()+&apos;/&apos;+(nowDate.getMonth()+1)+&apos;/&apos;+nowDate.getFullYear();&#xd;
+	var dataAtual = Date.now();&#xd;
+	&#xd;
+	&#xd;
+//	var oito = dataAtual +;&#xd;
+//	var dezesseis = dataAtual +;&#xd;
+//	var vintequatro = dataAtual +;&#xd;
+	&#xd;
+	log.info(&quot;Entrou Function: &quot; + atividade)&#xd;
+	log.info(&quot;prazo Formulario: &quot; + prazoFormulario)&#xd;
+	log.info(&quot;prazo Formulario: &quot; + nowDate)&#xd;
+	&#xd;
+	&#xd;
+    // Atividade de sequência 5 é a da tarefa criada e que vou alterar o prazo de conclusão&#xd;
+    if (atividade == 5) {&#xd;
+    	&#xd;
+    	log.info(&quot;valor sla&quot; + setValorSLA)&#xd;
+    	&#xd;
+    					if (setValorSLA == &quot;OITO&quot;) {&#xd;
+    						console.log(&quot;entrou 8 &quot;)&#xd;
+    								log.info(&quot;Entrou IF 8 Horas: &quot; + setValorSLA)&#xd;
+    	&#xd;
+						        // Recuperando a data informada no campo do formulário&#xd;
+						        if (prazoFormulario != undefined &amp;&amp; prazoFormulario != &apos;&apos;) {&#xd;
+&#xd;
+    								log.info(&quot;Entrou IF 1 After Task Save Não vazio: &quot; + setValorSLA)&#xd;
+						            var numeroDaSolicitacao = getValue(&apos;WKNumProces&apos;);&#xd;
+						            var threadDaSolicitacao = 0; // Normalmente 0, quando não for atividade paralela&#xd;
+						            var responsavelPelaTarefa = colleagueId;&#xd;
+						             &#xd;
+						            /* Nesse caso o formato da data salva pelo formulário no exemplo é DD/MM/AAAA, mas isso pode variar de acordo com a formatação utilizada, &#xd;
+						               mudando assim as posições das informações dentro do array */&#xd;
+						             /*01/07/2022*/&#xd;
+						            /* Extrai os dados da data do formulário para um array, para posteriormente transformar em data do Javascript */&#xd;
+						            var arrayPrazoConclusao = prazoFormulario.split(&quot;/&quot;);&#xd;
+						            var dia = arrayPrazoConclusao[0]; // Posição 0 do array é o dia&#xd;
+						            var mes = arrayPrazoConclusao[1] - 1; // Posição 1 do array é o mês (Subtraímos 1 porque na data do Javascript o mês vai de 0 a 11)&#xd;
+						            var ano = arrayPrazoConclusao[2]; // Posição 2 do array é o ano&#xd;
+						          &#xd;
+						            var horaDoPrazo = (15*60*60) - 1; /* A hora é em milisegundos, e esse cálculo tem resultado de 23:59:59, ou seja, &#xd;
+						            o prazo de conclusão vai ser até o último segundo do dia informado no formulário */&#xd;
+						           try{&#xd;
+						            // Cria a data no Javascript&#xd;
+						            var dataDoPrazo = new Date();&#xd;
+						            dataDoPrazo.setDate(dia);&#xd;
+						            dataDoPrazo.setMonth(mes);&#xd;
+						            dataDoPrazo.setFullYear(ano);&#xd;
+						            &#xd;
+						            //Calcula o prazo&#xd;
+						            var obj = hAPI.calculateDeadLineHours(dataDoPrazo, 50000, 8, &quot;Central de Cadastro - Cli/For&quot;);&#xd;
+						            var dt = obj[0];&#xd;
+						            var segundos = obj[1];&#xd;
+						            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+						            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+						            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+						            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+						            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+						             &#xd;
+						            &#xd;
+						            &#xd;
+						            // Altera o prazo de conclusão&#xd;
+						            hAPI.setDueDate(numeroDaSolicitacao, threadDaSolicitacao, responsavelPelaTarefa, dt, segundos);&#xd;
+						           &#xd;
+						            log.info(&quot;--------after--------- &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+						            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+						            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+						            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+						            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+						            log.info(&quot;Try Executado with successo&quot;) &#xd;
+						            console.log(&quot;dataDoPrazo 08 &quot;+dataDoPrazo)&#xd;
+						           }catch (mistake){log.info(&quot;erro do catch&quot; + mistake)}&#xd;
+						      &#xd;
+						     &#xd;
+//=---------------------------------------------------------------------------------------------------------------------------------------------------------------------------						        &#xd;
+						        &#xd;
+						  }}else if (setValorSLA == &quot;DEZESSEIS&quot; ){&#xd;
+							  console.log(&quot;entrou 16&quot;)&#xd;
+&#xd;
+    								log.info(&quot;Entrou IF 16 Horas: &quot; + setValorSLA)&#xd;
+    	&#xd;
+						        // Recuperando a data informada no campo do formulário&#xd;
+						        if (prazoFormulario != undefined &amp;&amp; prazoFormulario != &apos;&apos;) {&#xd;
+&#xd;
+    								log.info(&quot;Entrou IF 1 After Task Save Não vazio: &quot; + setValorSLA)&#xd;
+						            var numeroDaSolicitacao = getValue(&apos;WKNumProces&apos;);&#xd;
+						            var threadDaSolicitacao = 0; // Normalmente 0, quando não for atividade paralela&#xd;
+						            var responsavelPelaTarefa = colleagueId;&#xd;
+						             &#xd;
+						            /* Nesse caso o formato da data salva pelo formulário no exemplo é DD/MM/AAAA, mas isso pode variar de acordo com a formatação utilizada, &#xd;
+						               mudando assim as posições das informações dentro do array */&#xd;
+						             &#xd;
+						            /* Extrai os dados da data do formulário para um array, para posteriormente transformar em data do Javascript */&#xd;
+						            var arrayPrazoConclusao = prazoFormulario.split(&quot;/&quot;);&#xd;
+						            var dia = arrayPrazoConclusao[0]; // Posição 0 do array é o dia&#xd;
+						            var mes = arrayPrazoConclusao[1] - 1; // Posição 1 do array é o mês (Subtraímos 1 porque na data do Javascript o mês vai de 0 a 11)&#xd;
+						            var ano = arrayPrazoConclusao[2]; // Posição 2 do array é o ano&#xd;
+						          &#xd;
+						            var horaDoPrazo = (15*60*60) - 1; /* A hora é em milisegundos, e esse cálculo tem resultado de 23:59:59, ou seja, &#xd;
+						            o prazo de conclusão vai ser até o último segundo do dia informado no formulário */&#xd;
+						           try{&#xd;
+						            // Cria a data no Javascript&#xd;
+						            var dataDoPrazo = new Date();&#xd;
+						            dataDoPrazo.setDate(dia);&#xd;
+						            dataDoPrazo.setMonth(mes);&#xd;
+						            dataDoPrazo.setFullYear(ano);&#xd;
+						            &#xd;
+						            //Calcula o prazo&#xd;
+						            var obj = hAPI.calculateDeadLineHours(dataDoPrazo, 50000, 16, &quot;Central de Cadastro - Cli/For&quot;);&#xd;
+						            var dt = obj[0];&#xd;
+						            var segundos = obj[1];&#xd;
+						            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+						            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+						            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+						            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+						            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+						             &#xd;
+						            &#xd;
+						            &#xd;
+						            // Altera o prazo de conclusão&#xd;
+						            hAPI.setDueDate(numeroDaSolicitacao, threadDaSolicitacao, responsavelPelaTarefa, dt, segundos);&#xd;
+						           &#xd;
+						            log.info(&quot;--------after--------- &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+						            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+						            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+						            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+						            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+						            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+						            log.info(&quot;Try Executado with successo&quot;) &#xd;
+						            console.log(&quot;dataDoPrazo 16 &quot;+dataDoPrazo)&#xd;
+						           }catch (mistake){log.info(&quot;erro do catch&quot; + mistake)}&#xd;
+				&#xd;
+&#xd;
+//------------------------------------------------------------------------------------------------------------------------------------------------------&#xd;
+						        	&#xd;
+						 }}else if (setValorSLA == &quot;VINTEQUATRO&quot; ){&#xd;
+							 console.log(&quot;entrou 24 &quot;)&#xd;
+&#xd;
+								log.info(&quot;Entrou IF 24 Horas: &quot; + setValorSLA)&#xd;
+	&#xd;
+					        // Recuperando a data informada no campo do formulário&#xd;
+					        if (prazoFormulario != undefined &amp;&amp; prazoFormulario != &apos;&apos;) {&#xd;
+&#xd;
+								log.info(&quot;Entrou IF 1 After Task Save Não vazio: &quot; + setValorSLA)&#xd;
+					            var numeroDaSolicitacao = getValue(&apos;WKNumProces&apos;);&#xd;
+					            var threadDaSolicitacao = 0; // Normalmente 0, quando não for atividade paralela&#xd;
+					            var responsavelPelaTarefa = colleagueId;&#xd;
+					             &#xd;
+					            /* Nesse caso o formato da data salva pelo formulário no exemplo é DD/MM/AAAA, mas isso pode variar de acordo com a formatação utilizada, &#xd;
+					               mudando assim as posições das informações dentro do array */&#xd;
+					             &#xd;
+					            /* Extrai os dados da data do formulário para um array, para posteriormente transformar em data do Javascript */&#xd;
+					            var arrayPrazoConclusao = prazoFormulario.split(&quot;/&quot;);&#xd;
+					            var dia = arrayPrazoConclusao[0]; // Posição 0 do array é o dia&#xd;
+					            var mes = arrayPrazoConclusao[1] - 1; // Posição 1 do array é o mês (Subtraímos 1 porque na data do Javascript o mês vai de 0 a 11)&#xd;
+					            var ano = arrayPrazoConclusao[2]; // Posição 2 do array é o ano&#xd;
+					          &#xd;
+					            var horaDoPrazo = (15*60*60) - 1; /* A hora é em milisegundos, e esse cálculo tem resultado de 23:59:59, ou seja, &#xd;
+					            o prazo de conclusão vai ser até o último segundo do dia informado no formulário */&#xd;
+					           try{&#xd;
+					            // Cria a data no Javascript&#xd;
+					            var dataDoPrazo = new Date();&#xd;
+					            dataDoPrazo.setDate(dia);&#xd;
+					            dataDoPrazo.setMonth(mes);&#xd;
+					            dataDoPrazo.setFullYear(ano);&#xd;
+					            &#xd;
+					            //Calcula o prazo&#xd;
+					            var obj = hAPI.calculateDeadLineHours(dataDoPrazo, 50000, 24, &quot;Central de Cadastro - Cli/For&quot;);&#xd;
+					            var dt = obj[0];&#xd;
+					            var segundos = obj[1];&#xd;
+					            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+					            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+					            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+					            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+					            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+					            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+					             &#xd;
+					            &#xd;
+					            &#xd;
+					            // Altera o prazo de conclusão&#xd;
+					            hAPI.setDueDate(numeroDaSolicitacao, threadDaSolicitacao, responsavelPelaTarefa, dt, segundos);&#xd;
+					           &#xd;
+					            log.info(&quot;--------after--------- &quot;+dataDoPrazo)&#xd;
+					            log.info(&quot;data do prazo: &quot;+dataDoPrazo)&#xd;
+					            log.info(&quot;numeroDaSolicitacao: &quot;+numeroDaSolicitacao)&#xd;
+					            log.info(&quot;threadDaSolicitacao: &quot;+threadDaSolicitacao)&#xd;
+					            log.info(&quot;responsavelPelaTarefa: &quot;+responsavelPelaTarefa)&#xd;
+					            log.info(&quot;dataDoPrazo: &quot;+dt)&#xd;
+					            log.info(&quot;horaDoPrazo: &quot;+segundos)&#xd;
+					            log.info(&quot;Try Executado with successo&quot;) &#xd;
+					            console.log(&quot;dataDoPrazo 24 &quot;+dataDoPrazo)&#xd;
+					           }catch (mistake){log.info(&quot;erro do catch&quot; + mistake)&#xd;
+&#xd;
+			  }&#xd;
+		   }&#xd;
+    	}&#xd;
+    }&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>ENG_LITERALS</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>#Mon Oct 10 16:09:35 BRT 2022&#xd;
+3.name=SUPORTE&#xd;
+5.name=Solucionar Demanda &#xd;
+7.name=Inicio do Processo&#xd;
+9.name=Validar Solu\u00E7\u00E3o&#xd;
+21.name=&#xd;
+process.instructions=&#xd;
+16.return=&#xd;
+23.name=&#xd;
+15.name=End&#xd;
+6.flow=&#xd;
+21.return=&#xd;
+25.name=&#xd;
+10.flow=&#xd;
+19.name=Gestor T.I.&#xd;
+6.return=&#xd;
+24.flow=&#xd;
+18.return=&#xd;
+16.flow=&#xd;
+process.version.instructions=&#xd;
+23.return=&#xd;
+18.flow=&#xd;
+24.return=&#xd;
+9.instructions=&#xd;
+20.instructions=&#xd;
+25.return=&#xd;
+15.instructions=Atividade final do processo&#xd;
+2.name=SOLICITANTE&#xd;
+5.instructions=o usu\u00E1rio respons\u00E1vel pelo suporte recebe o ticket aberto pelo usu\u00E1rio e realizar as devidas a\u00E7\u00F5es, descrevendo a solu\u00E7\u00E3o do problema. &#xd;
+4.name=In\u00EDcio&#xd;
+process.description=Help Desk&#xd;
+6.name=&#xd;
+10.name=&#xd;
+20.name=Analise da gest\u00E3o &#xd;
+22.name=End&#xd;
+14.name=Exclusive&#xd;
+24.name=&#xd;
+10.return=&#xd;
+16.name=&#xd;
+21.flow=&#xd;
+18.name=&#xd;
+23.flow=&#xd;
+25.flow=&#xd;
+4.instructions=Usu\u00E1rio atrav\u00E9s do formul\u00E1rio solicita\u00E7\u00E3o suporte, realiza a abertura do tickert referente ao problema em ocorrencia.\r\n&#xd;
+22.instructions=Atividade final do processo&#xd;
+1.name=Processo HELP DESK&#xd;
+process.category=Tecnologia da Informa\u00E7\u00E3o - TI &#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>ESP_LITERALS</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>#Mon Oct 10 16:09:35 BRT 2022&#xd;
+3.name=SUPORTE&#xd;
+5.name=Solucionar Demanda &#xd;
+7.name=Inicio do Processo&#xd;
+9.name=Validar Solu\u00E7\u00E3o&#xd;
+21.name=&#xd;
+process.instructions=&#xd;
+16.return=&#xd;
+23.name=&#xd;
+15.name=End&#xd;
+6.flow=&#xd;
+21.return=&#xd;
+25.name=&#xd;
+10.flow=&#xd;
+19.name=Gestor T.I.&#xd;
+6.return=&#xd;
+24.flow=&#xd;
+18.return=&#xd;
+16.flow=&#xd;
+process.version.instructions=&#xd;
+23.return=&#xd;
+18.flow=&#xd;
+24.return=&#xd;
+9.instructions=&#xd;
+20.instructions=&#xd;
+25.return=&#xd;
+15.instructions=Atividade final do processo&#xd;
+2.name=SOLICITANTE&#xd;
+5.instructions=o usu\u00E1rio respons\u00E1vel pelo suporte recebe o ticket aberto pelo usu\u00E1rio e realizar as devidas a\u00E7\u00F5es, descrevendo a solu\u00E7\u00E3o do problema. &#xd;
+4.name=In\u00EDcio&#xd;
+process.description=Help Desk&#xd;
+6.name=&#xd;
+10.name=&#xd;
+20.name=Analise da gest\u00E3o &#xd;
+22.name=End&#xd;
+14.name=Exclusive&#xd;
+24.name=&#xd;
+10.return=&#xd;
+16.name=&#xd;
+21.flow=&#xd;
+18.name=&#xd;
+23.flow=&#xd;
+25.flow=&#xd;
+4.instructions=Usu\u00E1rio atrav\u00E9s do formul\u00E1rio solicita\u00E7\u00E3o suporte, realiza a abertura do tickert referente ao problema em ocorrencia.\r\n&#xd;
+22.instructions=Atividade final do processo&#xd;
+1.name=Processo HELP DESK&#xd;
+process.category=Tecnologia da Informa\u00E7\u00E3o - TI &#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>POR_LITERALS</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>#Mon Oct 10 16:09:35 BRT 2022&#xd;
+3.name=SUPORTE&#xd;
+5.name=Solucionar Demanda &#xd;
+7.name=Inicio do Processo&#xd;
+9.name=Validar Solu\u00E7\u00E3o&#xd;
+21.name=&#xd;
+process.instructions=&#xd;
+16.return=&#xd;
+23.name=&#xd;
+15.name=End&#xd;
+6.flow=&#xd;
+21.return=&#xd;
+25.name=&#xd;
+10.flow=&#xd;
+19.name=Gestor T.I.&#xd;
+6.return=&#xd;
+24.flow=&#xd;
+18.return=&#xd;
+16.flow=&#xd;
+process.version.instructions=&#xd;
+23.return=&#xd;
+18.flow=&#xd;
+24.return=&#xd;
+9.instructions=&#xd;
+20.instructions=&#xd;
+25.return=&#xd;
+15.instructions=Atividade final do processo&#xd;
+2.name=SOLICITANTE&#xd;
+5.instructions=o usu\u00E1rio respons\u00E1vel pelo suporte recebe o ticket aberto pelo usu\u00E1rio e realizar as devidas a\u00E7\u00F5es, descrevendo a solu\u00E7\u00E3o do problema. &#xd;
+4.name=In\u00EDcio&#xd;
+process.description=Help Desk&#xd;
+6.name=&#xd;
+10.name=&#xd;
+20.name=Analise da gest\u00E3o &#xd;
+22.name=End&#xd;
+14.name=Exclusive&#xd;
+24.name=&#xd;
+10.return=&#xd;
+16.name=&#xd;
+21.flow=&#xd;
+18.name=&#xd;
+23.flow=&#xd;
+25.flow=&#xd;
+4.instructions=Usu\u00E1rio atrav\u00E9s do formul\u00E1rio solicita\u00E7\u00E3o suporte, realiza a abertura do tickert referente ao problema em ocorrencia.\r\n&#xd;
+22.instructions=Atividade final do processo&#xd;
+1.name=Processo HELP DESK&#xd;
+process.category=Tecnologia da Informa\u00E7\u00E3o - TI &#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterStateLeave</eventId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterStateLeave(sequenceId){}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>421</height>
+      <width>831</width>
+      <positionX>10</positionX>
+      <positionY>10</positionY>
+      <stateName>Processo HELP DESK</stateName>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FF8040</color>
+      <height>140</height>
+      <width>801</width>
+      <positionX>40</positionX>
+      <positionY>10</positionY>
+      <stateName>SOLICITANTE</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FB8D82</color>
+      <height>140</height>
+      <width>801</width>
+      <positionX>40</positionX>
+      <positionY>150</positionY>
+      <stateName>SUPORTE</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>82b0b7</color>
+      <height>141</height>
+      <width>801</width>
+      <positionX>40</positionX>
+      <positionY>290</positionY>
+      <stateName>Gestor T.I.</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>160</positionX>
+      <positionY>40</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <componGrafSequence>7</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Inicio do Processo</stateName>
+    </ProcessComponGraf>
+  </list>
+  <list>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>8</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+    </ProcessLinkAssoc>
+  </list>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>6</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>137</positionX>
+      <positionY>225</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>8</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>137</positionX>
+      <positionY>74</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>10</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>452</positionX>
+      <positionY>225</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>18</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>538</positionX>
+      <positionY>29</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>18</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>283</positionX>
+      <positionY>29</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <version>1</version>
+        <linkSequence>24</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>283</positionX>
+      <positionY>362</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>NOMESOLICITANTE</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>Solicitante</fieldDescription>
+      <slotId>1</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>SLA</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>SLA</fieldDescription>
+      <slotId>2</slotId>
+    </ProcessFormField>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>PortalDeChamados</processId>
+        <fieldId>NOMETECNICO</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>Técnico</fieldDescription>
+      <slotId>3</slotId>
+    </ProcessFormField>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>1</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>title</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>1</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>description</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>1</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>highlight</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>1</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>approve</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+    <ProcessAppConfiguration>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>PortalDeChamados</processId>
+      <processVersion>1</processVersion>
+      <stateSequence>5</stateSequence>
+      <appKey>approval</appKey>
+      <appField>reject</appField>
+      <description></description>
+    </ProcessAppConfiguration>
+  </list>
+  <list/>
+  <list/>
+</list>
